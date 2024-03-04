@@ -1,0 +1,20 @@
+UI_EN = {
+	UI_optionscreen_binding_ToDoList = "To-Do List",
+	UI_optionscreen_binding_ToDoListToggle = "Toggle UI",
+	UI_optionscreen_binding_ToDoListNew = "New item",
+	UI_optionscreen_binding_ToDoListCleanUp = "Remove ticked items",
+	UI_optionscreen_binding_ToDoListDeleteAll = "Remove ALL items",
+	UI_ToDoList_Title = "To-do list",
+	UI_ToDoList_Button_AddNew = "Add new",
+	UI_ToDoList_Button_AddNew_Tooltip = "Add new item to the list. <br><br>Hotkey: ",
+	UI_ToDoList_Button_CleanUp = "Clean up",
+	UI_ToDoList_Button_CleanUp_Tooltip = "Remove all ticked items from the list. <br><br>Hotkey: ",
+	UI_NewToDoListItem_Title = "New to-do item",
+	UI_NewToDoListItem_Button_Save = "Save",
+	UI_ToDoListWarning_Title = "Warning!",
+	UI_ToDoListWarning_Text1 = "Are you sure you want to clear your To-Do list?",
+	UI_ToDoListWarning_Text2 = "This cannot be undone.",
+	UI_ToDoListWarning_Button_Yes = "Yes",
+	UI_ToDoListWarning_Button_No = "No",
+	UI_LeftPanel_ToDoListButton_Tooltip = "Toggle To-Do List UI.<br><br>Hotkey: "
+}
