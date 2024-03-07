@@ -33,7 +33,7 @@ You can also suggest features in the comments if they are not in the poll.
 # "To-Do List" won't-do list
 
 -   *Strike-through the ticked items* - not possible due to lack of this format in PZ engine.
--   *Close "New task" UI with Esc* - I didn't find how to make it work.
+-   *Close "New task" UI with Esc* - I didn't find how to make it work. But you can close that dialogue with Enter if the field is empty.
 
 # List of compatibility notes
 
