@@ -39,7 +39,7 @@ You can also suggest features in the comments if they are not in the poll.
 
 -   Make sure you install the [Simple UI library](https://steamcommunity.com/sharedfiles/filedetails/?id=2760035814) - the mod won't work without it.    
 -   The mod is done with compatibility in mind, so I don't anticipate any issues.
--   However, if some other mod changes the left panel, there may be problems due to how left panel changes are handled by the game. Please let me know about the problem.
+-   However, if some other mod changes the left panel, there may be problems due to how left panel changes are handled by the game. Please let me know if you encounter a problem.
 -   Safe to add or remove mid-save.
 -   Supports UI scaling.
 -   Supports MP.
@@ -48,7 +48,7 @@ You can also suggest features in the comments if they are not in the poll.
 # List of special thanks
 
 -   MrBounty - for the awesome [SimpleUI library](https://steamcommunity.com/sharedfiles/filedetails/?id=2760035814). Even though it leaves [a lot](https://github.com/MrBounty/PZ-UI_API/issues) to be desired, I don't think I'd ever be able to conquer Zomboid UI without it.
--   Poltergeist - for his amazing auto translation tool that I believe every PZ modder should use.
+-   Poltergeist - for his amazing [auto translation tool](https://github.com/Poltergeist-PZ-Modding/pz-translator) that I believe every PZ modder should use.
 -   Burryaga - for the enormous stream of wisdom he's been sending my way, as well as the scrupulous code review. Modders together strong.
 -   You - if you like, subscribe and/or favorite this mod.
 -   You again - if you choose the last option in the [poll](https://tally.so/r/mYW855).
