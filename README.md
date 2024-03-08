@@ -16,6 +16,7 @@ At last, you can leave your map alone and keep your shopping list where it belon
 -   Separate button that removes ticked items.
 -   Supports multi-line items.
 -   Configurable hotkeys for most actions.
+-   AI translated to all available languares (**human contributions are welcome**).
     
 
 # "To-Do List" to-do list *
