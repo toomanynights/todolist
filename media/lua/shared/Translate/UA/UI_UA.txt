@@ -1,0 +1,18 @@
+UI_EN = {
+	UI_optionscreen_binding_ToDoList = "Список справ",
+	UI_optionscreen_binding_ToDoListToggle = "Перемкнути інтерфейс користувача",
+	UI_optionscreen_binding_ToDoListNew = "Новий товар",
+	UI_optionscreen_binding_ToDoListCheckOff = "Видалити позначені елементи",
+	UI_optionscreen_binding_ToDoListDeleteAll = "Видалити ВСІ елементи",
+	UI_ToDoList_Title = "Список справ",
+	UI_ToDoList_Button_AddNew = "Нове завдання",
+	UI_ToDoList_Button_AddNew_Tooltip = "Додати новий елемент до списку. <br><br>Гаряча клавіша:",
+	UI_ToDoList_Button_CheckOff = "Позначити галочкою",
+	UI_ToDoList_Button_CheckOff_Tooltip = "Видалити зі списку всі позначені пункти. <br><br>Гаряча клавіша:",
+	UI_NewToDoListItem_Title = "Нове завдання",
+	UI_NewToDoListItem_Button_Save = "зберегти",
+	UI_ToDoListWarning_Title = "УВАГА!",
+	UI_ToDoListWarning_Text1 = "Ви впевнені, що бажаєте очистити список справ?",
+	UI_ToDoListWarning_Text2 = "Це не може бути скасоване.",
+	UI_LeftPanel_ToDoListButton_Tooltip = "Перемкнути інтерфейс списку справ.<br><br>Гаряча клавіша:"
+}

@@ -2,12 +2,12 @@ require "ISUI/ISSimpleTickBox"
 require "ISUI/ISSimpleText"
 require "ISUI/ISSimpleTickBox"
 
-local ToDoList = require "ToDoList/ToDoList"
-local ToDoListHelpers = require "ToDoList/Utility"
+local ToDoList = require "ToDoList/Main"
+local ToDoListUtility = require "ToDoList/Utility"
 
 local ToDoListDecorations = {}
-ToDoListDecorations.ISEquippedItem = {}
 
+ToDoListDecorations.ISEquippedItem = {}
 
 -- Changing icon depenging on UI state --
 
@@ -137,7 +137,7 @@ function ISSimpleText:setPositionAndSize()
 		self:setY(self.pxlY)
 		self:setWidth(self.pxlW)
 	
-		self.textToDisplay, self.textW, self.textH, self.pxlH = ToDoListHelpers.getTextSize(self.textOriginal, self:getWidth(), self.font)
+		self.textToDisplay, self.textW, self.textH, self.pxlH = ToDoListUtility.getTextSize(self.textOriginal, self:getWidth(), self.font)
 		self:setHeight(self.pxlH)
 	else
 		ToDoListDecorations.ISSimpleText.setPositionAndSize(self)
@@ -179,6 +179,5 @@ function ISSimpleTickBox:setPositionAndSize()
 		ToDoListDecorations.ISSimpleTickBox.setPositionAndSize(self)
 	end
 end
-
 
 return ToDoListDecorations

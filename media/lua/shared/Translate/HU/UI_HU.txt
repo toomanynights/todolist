@@ -1,0 +1,18 @@
+UI_HU = {
+	UI_optionscreen_binding_ToDoList = "Feladatlista",
+	UI_optionscreen_binding_ToDoListToggle = "UI váltás",
+	UI_optionscreen_binding_ToDoListNew = "Új elem",
+	UI_optionscreen_binding_ToDoListCheckOff = "Távolítsa el a bejelölt elemeket",
+	UI_optionscreen_binding_ToDoListDeleteAll = "Távolítsa el az ÖSSZES elemet",
+	UI_ToDoList_Title = "Feladatlista",
+	UI_ToDoList_Button_AddNew = "Új feladat",
+	UI_ToDoList_Button_AddNew_Tooltip = "Új elem hozzáadása a listához. <br><br>Gyorsbillentyû:",
+	UI_ToDoList_Button_CheckOff = "Jelölje ki",
+	UI_ToDoList_Button_CheckOff_Tooltip = "Távolítsa el az összes bejelölt elemet a listáról. <br><br>Gyorsbillentyû:",
+	UI_NewToDoListItem_Title = "Új feladat",
+	UI_NewToDoListItem_Button_Save = "Megment",
+	UI_ToDoListWarning_Title = "Figyelem!",
+	UI_ToDoListWarning_Text1 = "Biztosan törli a teendõk listáját?",
+	UI_ToDoListWarning_Text2 = "Ezt nem lehet visszacsinálni.",
+	UI_LeftPanel_ToDoListButton_Tooltip = "Teendõlista kezelõfelületének váltása.<br><br>Gyorsbillentyû:"
+}

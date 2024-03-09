@@ -1,0 +1,18 @@
+UI_NO = {
+	UI_optionscreen_binding_ToDoList = "Gjøremålsliste",
+	UI_optionscreen_binding_ToDoListToggle = "Slå av/på UI",
+	UI_optionscreen_binding_ToDoListNew = "Ny gjenstand",
+	UI_optionscreen_binding_ToDoListCheckOff = "Fjern avmerkede elementer",
+	UI_optionscreen_binding_ToDoListDeleteAll = "Fjern ALLE elementer",
+	UI_ToDoList_Title = "Gjøremålsliste",
+	UI_ToDoList_Button_AddNew = "Ny oppgave",
+	UI_ToDoList_Button_AddNew_Tooltip = "Legg til et nytt element i listen. <br><br>Hurtigtast:",
+	UI_ToDoList_Button_CheckOff = "Krysse av",
+	UI_ToDoList_Button_CheckOff_Tooltip = "Fjern alle avmerkede elementer fra listen. <br><br>Hurtigtast:",
+	UI_NewToDoListItem_Title = "Ny oppgave",
+	UI_NewToDoListItem_Button_Save = "Lagre",
+	UI_ToDoListWarning_Title = "Advarsel!",
+	UI_ToDoListWarning_Text1 = "Er du sikker på at du vil tømme huskelisten din?",
+	UI_ToDoListWarning_Text2 = "Dette kan ikke angres.",
+	UI_LeftPanel_ToDoListButton_Tooltip = "Slå av/på Gjøremålsliste-grensesnittet.<br><br>Hurtigtast:"
+}

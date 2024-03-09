@@ -1,0 +1,18 @@
+UI_DA = {
+	UI_optionscreen_binding_ToDoList = "To-do liste",
+	UI_optionscreen_binding_ToDoListToggle = "Skift UI",
+	UI_optionscreen_binding_ToDoListNew = "Ny vare",
+	UI_optionscreen_binding_ToDoListCheckOff = "Fjern afkrydsede elementer",
+	UI_optionscreen_binding_ToDoListDeleteAll = "Fjern ALLE genstande",
+	UI_ToDoList_Title = "To-do liste",
+	UI_ToDoList_Button_AddNew = "Ny opgave",
+	UI_ToDoList_Button_AddNew_Tooltip = "Tilføj et nyt element til listen. <br><br>Genvejstast:",
+	UI_ToDoList_Button_CheckOff = "Afkrydse",
+	UI_ToDoList_Button_CheckOff_Tooltip = "Fjern alle afkrydsede elementer fra listen. <br><br>Genvejstast:",
+	UI_NewToDoListItem_Title = "Ny opgave",
+	UI_NewToDoListItem_Button_Save = "Gemme",
+	UI_ToDoListWarning_Title = "Advarsel!",
+	UI_ToDoListWarning_Text1 = "Er du sikker på, at du vil rydde din opgaveliste?",
+	UI_ToDoListWarning_Text2 = "Dette kan ikke fortrydes.",
+	UI_LeftPanel_ToDoListButton_Tooltip = "Skift To-Do List UI.<br><br>Genvejstast:"
+}

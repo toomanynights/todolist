@@ -1,0 +1,18 @@
+UI_EN = {
+	UI_optionscreen_binding_ToDoList = "Seznam úkolù",
+	UI_optionscreen_binding_ToDoListToggle = "Pøepnout uživatelské rozhraní",
+	UI_optionscreen_binding_ToDoListNew = "Nový pøedmìt",
+	UI_optionscreen_binding_ToDoListCheckOff = "Odstraòte zaškrtnuté položky",
+	UI_optionscreen_binding_ToDoListDeleteAll = "Odebrat VŠECHNY položky",
+	UI_ToDoList_Title = "Seznam úkolù",
+	UI_ToDoList_Button_AddNew = "Nová úloha",
+	UI_ToDoList_Button_AddNew_Tooltip = "Pøidejte do seznamu novou položku. <br><br>Klávesová zkratka:",
+	UI_ToDoList_Button_CheckOff = "Odškrtnout",
+	UI_ToDoList_Button_CheckOff_Tooltip = "Odstraòte všechny zaškrtnuté položky ze seznamu. <br><br>Klávesová zkratka:",
+	UI_NewToDoListItem_Title = "Nová úloha",
+	UI_NewToDoListItem_Button_Save = "Uložit",
+	UI_ToDoListWarning_Title = "Varování!",
+	UI_ToDoListWarning_Text1 = "Opravdu chcete vymazat svùj seznam úkolù?",
+	UI_ToDoListWarning_Text2 = "To nelze vrátit zpìt.",
+	UI_LeftPanel_ToDoListButton_Tooltip = "Pøepnout uživatelské rozhraní seznamu úkolù.<br><br>Klávesová zkratka:"
+}

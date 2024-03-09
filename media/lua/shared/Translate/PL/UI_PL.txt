@@ -1,0 +1,18 @@
+UI_PL = {
+	UI_optionscreen_binding_ToDoList = "Lista rzeczy do zrobienia",
+	UI_optionscreen_binding_ToDoListToggle = "Prze³¹cz interfejs u¿ytkownika",
+	UI_optionscreen_binding_ToDoListNew = "Nowy przedmiot",
+	UI_optionscreen_binding_ToDoListCheckOff = "Usuñ zaznaczone elementy",
+	UI_optionscreen_binding_ToDoListDeleteAll = "Usuñ WSZYSTKIE elementy",
+	UI_ToDoList_Title = "Lista rzeczy do zrobienia",
+	UI_ToDoList_Button_AddNew = "Nowe zadanie",
+	UI_ToDoList_Button_AddNew_Tooltip = "Dodaj now¹ pozycjê do listy. <br><br>Skrót klawiszowy:",
+	UI_ToDoList_Button_CheckOff = "Odhaczyæ",
+	UI_ToDoList_Button_CheckOff_Tooltip = "Usuñ wszystkie zaznaczone pozycje z listy. <br><br>Skrót klawiszowy:",
+	UI_NewToDoListItem_Title = "Nowe zadanie",
+	UI_NewToDoListItem_Button_Save = "Ratowaæ",
+	UI_ToDoListWarning_Title = "Ostrze¿enie!",
+	UI_ToDoListWarning_Text1 = "Czy na pewno chcesz wyczyœciæ listê rzeczy do zrobienia?",
+	UI_ToDoListWarning_Text2 = "Tego nie da siê cofn¹æ.",
+	UI_LeftPanel_ToDoListButton_Tooltip = "Prze³¹cz interfejs listy zadañ do wykonania.<br><br>Skrót klawiszowy:"
+}

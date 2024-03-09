@@ -1,0 +1,18 @@
+UI_CN = {
+	UI_optionscreen_binding_ToDoList = "待辦事項清單",
+	UI_optionscreen_binding_ToDoListToggle = "切換使用者介面",
+	UI_optionscreen_binding_ToDoListNew = "新物品",
+	UI_optionscreen_binding_ToDoListCheckOff = "刪除勾選的項目",
+	UI_optionscreen_binding_ToDoListDeleteAll = "刪除所有項目",
+	UI_ToDoList_Title = "待辦事項清單",
+	UI_ToDoList_Button_AddNew = "新任務",
+	UI_ToDoList_Button_AddNew_Tooltip = "將新項目新增至清單。 <br><br>熱鍵：",
+	UI_ToDoList_Button_CheckOff = "核對",
+	UI_ToDoList_Button_CheckOff_Tooltip = "從清單中刪除所有勾選的項目。 <br><br>熱鍵：",
+	UI_NewToDoListItem_Title = "新任務",
+	UI_NewToDoListItem_Button_Save = "節省",
+	UI_ToDoListWarning_Title = "警告！",
+	UI_ToDoListWarning_Text1 = "您確定要清除您的待辦事項清單嗎？",
+	UI_ToDoListWarning_Text2 = "這不能被撤消。",
+	UI_LeftPanel_ToDoListButton_Tooltip = "切換待辦事項清單 UI。<br><br>熱鍵："
+}

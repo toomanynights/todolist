@@ -1,0 +1,18 @@
+UI_IT = {
+	UI_optionscreen_binding_ToDoList = "Lista di cose da fare",
+	UI_optionscreen_binding_ToDoListToggle = "Attiva/disattiva l'interfaccia utente",
+	UI_optionscreen_binding_ToDoListNew = "Nuovo oggetto",
+	UI_optionscreen_binding_ToDoListCheckOff = "Rimuovi elementi contrassegnati",
+	UI_optionscreen_binding_ToDoListDeleteAll = "Rimuovi TUTTI gli elementi",
+	UI_ToDoList_Title = "Lista di cose da fare",
+	UI_ToDoList_Button_AddNew = "Nuovo compito",
+	UI_ToDoList_Button_AddNew_Tooltip = "Aggiungi un nuovo elemento all'elenco. <br><br>Tasto di scelta rapida:",
+	UI_ToDoList_Button_CheckOff = "Spuntare",
+	UI_ToDoList_Button_CheckOff_Tooltip = "Rimuovi tutti gli elementi spuntati dall'elenco. <br><br>Tasto di scelta rapida:",
+	UI_NewToDoListItem_Title = "Nuovo compito",
+	UI_NewToDoListItem_Button_Save = "Salva",
+	UI_ToDoListWarning_Title = "Avvertimento!",
+	UI_ToDoListWarning_Text1 = "Sei sicuro di voler cancellare la tua lista di cose da fare?",
+	UI_ToDoListWarning_Text2 = "Questa operazione non può essere annullata.",
+	UI_LeftPanel_ToDoListButton_Tooltip = "Attiva/disattiva l'interfaccia utente dell'elenco delle cose da fare.<br><br>Tasto di scelta rapida:"
+}

@@ -1,0 +1,18 @@
+UI_TH = {
+	UI_optionscreen_binding_ToDoList = "รายการสิ่งที่ต้องทำ",
+	UI_optionscreen_binding_ToDoListToggle = "สลับ UI",
+	UI_optionscreen_binding_ToDoListNew = "ไอเท็มใหม่",
+	UI_optionscreen_binding_ToDoListCheckOff = "ลบรายการที่ถูกเลือก",
+	UI_optionscreen_binding_ToDoListDeleteAll = "ลบรายการทั้งหมด",
+	UI_ToDoList_Title = "รายการสิ่งที่ต้องทำ",
+	UI_ToDoList_Button_AddNew = "งานใหม่",
+	UI_ToDoList_Button_AddNew_Tooltip = "เพิ่มรายการใหม่ลงในรายการ <br><br>ปุ่มลัด:",
+	UI_ToDoList_Button_CheckOff = "ทำเครื่องหมายปิด",
+	UI_ToDoList_Button_CheckOff_Tooltip = "ลบรายการที่เลือกทั้งหมดออกจากรายการ <br><br>ปุ่มลัด:",
+	UI_NewToDoListItem_Title = "งานใหม่",
+	UI_NewToDoListItem_Button_Save = "บันทึก",
+	UI_ToDoListWarning_Title = "คำเตือน!",
+	UI_ToDoListWarning_Text1 = "คุณแน่ใจหรือไม่ว่าต้องการล้างรายการสิ่งที่ต้องทำ",
+	UI_ToDoListWarning_Text2 = "สิ่งนี้ไม่สามารถยกเลิกได้",
+	UI_LeftPanel_ToDoListButton_Tooltip = "สลับ UI รายการสิ่งที่ต้องทำ<br><br>ปุ่มลัด:"
+}

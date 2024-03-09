@@ -1,16 +1,18 @@
 require "ISUI/GlobalFunctions"
-local ToDoListHelpers = require "ToDoList/Utility"
 
+local ToDoListUtility = require "ToDoList/Utility"
 local ToDoList = {}
+ToDoList.somethingTicked = false
 ToDoList.interface = {}
-
+ToDoList.joinedGameNow = true
 
 -- Main interface builder --
 
 ToDoList.create = function()
+	local mainColumnWidth = 200
 
 	ToDoList.interface = NewUI()
-	local mainColumnWidth = 200
+
 	ToDoList.interface:setTitle(getText("UI_ToDoList_Title"))
 	ToDoList.interface:setColumnWidthPixel(1, 40)
 	ToDoList.interface:setColumnWidthPixel(2, mainColumnWidth)
@@ -39,8 +41,10 @@ ToDoList.create = function()
 	ToDoList.interface["addNew1"]:setTooltip(getText("UI_ToDoList_Button_AddNew_Tooltip") .. getKeyName(getCore():getKey('ToDoListNew')))
 	
 	ToDoList.interface:addEmpty()
-	ToDoList.interface:addButton("clean1", getText("UI_ToDoList_Button_CleanUp"), ToDoList.cleanUp)
-	ToDoList.interface["clean1"]:setTooltip(getText("UI_ToDoList_Button_CleanUp_Tooltip") .. getKeyName(getCore():getKey('ToDoListCleanUp')))
+	ToDoList.interface:addButton("checkOff1", getText("UI_ToDoList_Button_CheckOff"), ToDoList.checkOff)
+	ToDoList.interface["checkOff1"]:setTooltip(getText("UI_ToDoList_Button_CheckOff_Tooltip") .. getKeyName(getCore():getKey('ToDoListCheckOff')))
+
+    ToDoList.interface.namedElements["checkOff1"].enable = ToDoList.somethingTicked
 
 	ToDoList.interface:addEmpty()
 	ToDoList.interface:setLineHeightPixel(30)
@@ -51,22 +55,27 @@ ToDoList.create = function()
 
 	ToDoList.interface:saveLayout()
 
-	local moddata = ToDoListHelpers.getValidModData()
-	if moddata.position ~= nil then
-		local x = moddata.position.x
-		local y = moddata.position.y
+	local modData = ToDoListUtility.getValidModData()
+	if modData.position ~= nil then
+		local x = modData.position.x
+		local y = modData.position.y
 		ToDoList.interface:setPositionPixel(x, y) 
 
-		if moddata.position.isVisible == true then
+		if modData.position.isVisible == true then
 			ToDoList.interface:open()
 		end
 	else 
 		ToDoList.interface:setPositionPercent(1, 1)
-		moddata.position = {}
-		moddata.position.x = ToDoList.interface.x
-		moddata.position.y = ToDoList.interface.y
+		modData.position = {}
+		modData.position.x = ToDoList.interface.x
+		modData.position.y = ToDoList.interface.y
 	end
-	ModData.add("ToDoList", moddata)
+	ModData.add("ToDoList", modData)
+
+    if ToDoList.joinedGameNow then
+        ToDoList.hideForGamepad()
+        ToDoList.joinedGameNow = false
+    end
 end
 
 
@@ -74,8 +83,8 @@ end
 
 ToDoList.fillWithItems = function(width)
 
-	local moddata = ToDoListHelpers.getValidModData()
-	local itemList = moddata.lists[1]
+	local modData = ToDoListUtility.getValidModData()
+	local itemList = modData.lists[1]
 	local function byValue(first, second)
 		if second.ticked ~= first.ticked then
 			return second.ticked and not first.ticked
@@ -84,12 +93,13 @@ ToDoList.fillWithItems = function(width)
 	end
 
 	table.sort(itemList, byValue)
+    
+    ToDoList.somethingTicked = false
 
 	for key,value in pairs(itemList) do
 
-		local lineHeight = select(4, ToDoListHelpers.getTextSize(value.text, width, UIFont["Medium"]))
+		local lineHeight = select(4, ToDoListUtility.getTextSize(value.text, width, UIFont["Medium"]))
 		ToDoList.interface:setLineHeightPixel(lineHeight)
-		print("Line " .. key .. " height is: " .. lineHeight)
 
 		ToDoList.interface:addTickBox("tickBox" .. key)
 		ToDoList.interface:addText("item" .. key, value.text, "Medium", "Left")
@@ -97,6 +107,8 @@ ToDoList.fillWithItems = function(width)
 		if value.ticked == true then 
 			ToDoList.interface["tickBox" .. key]:setValue(true)
 			ToDoList.interface["item" .. key]:setColor(0.5, 96, 96, 96)
+            
+            ToDoList.somethingTicked = true
 		end
 
 		ToDoList.interface:addEmpty()
@@ -108,13 +120,22 @@ end
 -- Reaction on ticking or unticking the box --
 
 ToDoList.onBoxTicked = function(itemId, state)
+	local modData = ToDoListUtility.getValidModData()
+	modData.lists[1][tonumber(itemId)].ticked = state
+	ModData.add("ToDoList", modData)
 
-	local moddata = ToDoListHelpers.getValidModData()
-	moddata.lists[1][tonumber(itemId)].ticked = state
-	ModData.add("ToDoList", moddata)
+    ToDoList.somethingTicked = false
+
+    for key, item in pairs(modData.lists[1]) do
+        if item.ticked then
+            ToDoList.somethingTicked = true
+            break
+        end
+    end
+
+    ToDoList.interface.namedElements["checkOff1"].enable = ToDoList.somethingTicked
 
 	ToDoList.rebuildInterface()
-
 end
 
 
@@ -123,13 +144,15 @@ end
 ToDoList.addItemToList = function(button, args)
 
 	local text = ToDoList.newItemUI.newItemText:getValue()
-	ToDoList.newItemUI["newItemText"].javaObject:unfocus() -- otherwise in case of submitting with Enter the focus remains in a text field
+	-- Unfocus keyboard from text field so that keys are available for gameplay:
+	ToDoList.newItemUI["newItemText"].javaObject:unfocus() 
+	
 	ToDoList.newItemUI:close()
 
 	if text ~= "" then
-		local moddata = ToDoListHelpers.getValidModData()
-		table.insert(moddata.lists[1], {text=text, ticked=false, id = #moddata.lists[1] + 1})
-		ModData.add("ToDoList", moddata)
+		local modData = ToDoListUtility.getValidModData()
+		table.insert(modData.lists[1], {text=text, ticked=false, id = #modData.lists[1] + 1})
+		ModData.add("ToDoList", modData)
 		
 		ToDoList.rebuildInterface()
 	end
@@ -138,10 +161,10 @@ end
 
 -- Function to remove checked items --
 
-ToDoList.cleanUp = function()
+ToDoList.checkOff = function()
 
-	local moddata = ToDoListHelpers.getValidModData()
-	local itemList = moddata.lists[1]
+	local modData = ToDoListUtility.getValidModData()
+	local itemList = modData.lists[1]
 
 	for i=#itemList,1,-1 do
 		local value = itemList[i]
@@ -151,7 +174,7 @@ ToDoList.cleanUp = function()
 		value.id = key
 	end
 
-	ModData.add("ToDoList", moddata)
+	ModData.add("ToDoList", modData)
 	ToDoList.rebuildInterface()
 
 end
@@ -172,15 +195,15 @@ end
 
 ToDoList.savePosition = function()
 
-	local moddata = ToDoListHelpers.getValidModData()
+	local modData = ToDoListUtility.getValidModData()
 
 	if ToDoList.interface.x ~= nil then
-		moddata.position.x = ToDoList.interface.x
-		moddata.position.y = ToDoList.interface.y
-		moddata.position.isVisible = ToDoList.interface.isUIVisible
+		modData.position.x = ToDoList.interface.x
+		modData.position.y = ToDoList.interface.y
+		modData.position.isVisible = ToDoList.interface.isUIVisible
 	end
 
-	ModData.add("ToDoList", moddata)
+	ModData.add("ToDoList", modData)
 
 end
 
@@ -191,7 +214,13 @@ ToDoList.toggleViaBinding = function()
 	ToDoList.interface:toggle()
 end
 
+ToDoList.getJoypadData = function(playerIndex)
 
+    if not playerIndex then playerIndex = 0 end
+
+    return JoypadState.players[playerIndex + 1]
+
+end
 ----------------------
 
 
@@ -250,7 +279,7 @@ ToDoList.createWarning = function()
 	ToDoList.warning = NewUI()
 	ToDoList.warning:setTitle(getText("UI_ToDoListWarning_Title"))
 
-	local text1, textWidth, textHeight, textHeightWithMargin = select(1, ToDoListHelpers.getTextSize(getText("UI_ToDoListWarning_Text1"), 999, UIFont["Small"]))
+	local text1, textWidth, textHeight, textHeightWithMargin = select(1, ToDoListUtility.getTextSize(getText("UI_ToDoListWarning_Text1"), 999, UIFont["Small"]))
 	local widthWithMargin = textWidth + 40
 	ToDoList.warning:setWidthPixel(widthWithMargin)
 	ToDoList.warning:setInCenterOfScreen()
@@ -275,9 +304,9 @@ ToDoList.createWarning = function()
 	ToDoList.warning:setColumnWidthPixel(5, widthWithMargin * 0.15);
 	
 	ToDoList.warning:addEmpty()
-	ToDoList.warning:addButton("clear1", getText("UI_ToDoListWarning_Button_Yes"), ToDoList.deleteAll)
+	ToDoList.warning:addButton("checkOff1", getText("UI_Yes"), ToDoList.deleteAll)
 	ToDoList.warning:addEmpty()
-	ToDoList.warning:addButton("cancel1", getText("UI_ToDoListWarning_Button_No"), ToDoList.closeWarningViaButton)
+	ToDoList.warning:addButton("cancel1", getText("UI_No"), ToDoList.closeWarningViaButton)
 	ToDoList.warning:addEmpty()
 	ToDoList.warning:nextLine()
 	
@@ -300,19 +329,24 @@ ToDoList.deleteAll = function()
 
 	ToDoList.warning:close()
 
-	local moddata = ToDoListHelpers.getValidModData()
-	moddata.lists[1] = {}
-	ModData.add("ToDoList", moddata)
+	local modData = ToDoListUtility.getValidModData()
+	modData.lists[1] = {}
+	ModData.add("ToDoList", modData)
 	ToDoList.rebuildInterface()
 end
 
 
 -- Bind Enter to confirm removing all items --
 
+ToDoList.enter = {
+	[28] = true,
+	[156] = true
+}
+
 ToDoList.bindEnterToConfirmation = function(key)
 
-	if key == 156 or key == 28 then
-		if ToDoList.warning.getIsVisible ~= nil and ToDoList.warning:getIsVisible() == true then
+	if ToDoList.enter[key] then
+		if ToDoList.warning.getIsVisible and ToDoList.warning:getIsVisible() then
 			ToDoList.deleteAll()
 		end
 	end
@@ -340,8 +374,8 @@ ToDoList.createBindings = function()
             key = Keyboard.KEY_ADD,
         },
 		{
-            value = "ToDoListCleanUp",
-			action = ToDoList.cleanUp,
+            value = "ToDoListCheckOff",
+			action = ToDoList.checkOff,
             key = Keyboard.KEY_SUBTRACT,
         },
 		{
@@ -360,7 +394,7 @@ ToDoList.createBindings = function()
 		end
 	end
 
-	local createAction = function(key)
+	ToDoList.createAction = function(key)
         local player = getSpecificPlayer(0)
         local action
         for _,bind in ipairs(bindings) do
@@ -376,9 +410,16 @@ ToDoList.createBindings = function()
 	end
 
     Events.OnGameStart.Add(function()
-        Events.OnKeyPressed.Add(createAction)
+        Events.OnKeyPressed.Add(ToDoList.createAction)
     end)
     
+end
+
+ToDoList.hideForGamepad = function(playerIndex)
+    if ToDoList.getJoypadData(playerIndex) then
+        ToDoList.interface:setVisible(false);
+        ToDoList.interface.isUIVisible = false;
+    end
 end
 
 Events.OnGameBoot.Add(ToDoList.createBindings)
@@ -386,8 +427,4 @@ Events.OnLoad.Add(ToDoList.create)
 Events.OnSave.Add(ToDoList.savePosition)
 Events.OnCustomUIKeyPressed.Add(ToDoList.bindEnterToConfirmation)
 
-
 return ToDoList
-
-
-

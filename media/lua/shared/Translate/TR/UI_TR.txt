@@ -1,0 +1,18 @@
+UI_TR = {
+	UI_optionscreen_binding_ToDoList = "Yapýlacaklar listesi",
+	UI_optionscreen_binding_ToDoListToggle = "Kullanýcý arayüzünü deðiþtir",
+	UI_optionscreen_binding_ToDoListNew = "Yeni öðe",
+	UI_optionscreen_binding_ToDoListCheckOff = "Ýþaretli Öðeleri Kaldýr",
+	UI_optionscreen_binding_ToDoListDeleteAll = "TÜM Öðeleri Kaldýr",
+	UI_ToDoList_Title = "Yapýlacaklar listesi",
+	UI_ToDoList_Button_AddNew = "Yeni görev",
+	UI_ToDoList_Button_AddNew_Tooltip = "Listeye yeni bir öðe ekleyin. <br><br>Kýsayol tuþu:",
+	UI_ToDoList_Button_CheckOff = "Ýþaretle",
+	UI_ToDoList_Button_CheckOff_Tooltip = "Ýþaretli tüm öðeleri listeden kaldýrýn. <br><br>Kýsayol tuþu:",
+	UI_NewToDoListItem_Title = "Yeni görev",
+	UI_NewToDoListItem_Button_Save = "Kaydetmek",
+	UI_ToDoListWarning_Title = "Uyarý!",
+	UI_ToDoListWarning_Text1 = "Yapýlacaklar listenizi temizlemek istediðinizden emin misiniz?",
+	UI_ToDoListWarning_Text2 = "Bu geri alýnamaz.",
+	UI_LeftPanel_ToDoListButton_Tooltip = "Yapýlacaklar Listesi Arayüzünü Deðiþtir.<br><br>Kýsayol Tuþu:"
+}

@@ -1,0 +1,18 @@
+UI_RO = {
+	UI_optionscreen_binding_ToDoList = "Lista de sarcini",
+	UI_optionscreen_binding_ToDoListToggle = "Comutați interfața de utilizare",
+	UI_optionscreen_binding_ToDoListNew = "Articol nou",
+	UI_optionscreen_binding_ToDoListCheckOff = "Eliminați elementele bifate",
+	UI_optionscreen_binding_ToDoListDeleteAll = "Eliminați TOATE articolele",
+	UI_ToDoList_Title = "Lista de sarcini",
+	UI_ToDoList_Button_AddNew = "Sarcina noua",
+	UI_ToDoList_Button_AddNew_Tooltip = "Adăugați un articol nou în listă. <br><br>Tastă rapidă:",
+	UI_ToDoList_Button_CheckOff = "Bifa",
+	UI_ToDoList_Button_CheckOff_Tooltip = "Eliminați toate elementele bifate din listă. <br><br>Tastă rapidă:",
+	UI_NewToDoListItem_Title = "Sarcina noua",
+	UI_NewToDoListItem_Button_Save = "Salvați",
+	UI_ToDoListWarning_Title = "Avertizare!",
+	UI_ToDoListWarning_Text1 = "Sigur doriți să vă ștergeți lista de lucruri de făcut?",
+	UI_ToDoListWarning_Text2 = "Acest lucru nu poate fi anulat.",
+	UI_LeftPanel_ToDoListButton_Tooltip = "Comutați interfața de utilizare a listei de activități.<br><br>Tastă rapidă:"
+}

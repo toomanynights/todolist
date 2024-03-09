@@ -1,26 +1,26 @@
-local ToDoListHelpers = {}
+local ToDoListUtility = {}
 
 
 -- Get mod data for To-Do List, create stuff if doesn't exist --
 
-ToDoListHelpers.getValidModData = function()
+ToDoListUtility.getValidModData = function()
 
-	local moddata = ModData.getOrCreate("ToDoList")
-	if moddata.lists == nil then
-		moddata.lists = {}
+	local modData = ModData.getOrCreate("ToDoList")
+	if modData.lists == nil then
+		modData.lists = {}
 	end
-	if moddata.lists[1] == nil then
-		moddata.lists[1] = {}
+	if modData.lists[1] == nil then
+		modData.lists[1] = {}
 	end
 
-	return moddata
+	return modData
 
 end
 
 
 -- Replacement for a function that cuts text to fit (why cut if we can add line breaks?) --
 
-function ToDoListHelpers.getTextSize(text, width, font, zoom)
+function ToDoListUtility.getTextSize(text, width, font, zoom)
 
 	if not zoom then zoom = 1 end
 	local brokenText = {}
@@ -59,5 +59,4 @@ function ToDoListHelpers.getTextSize(text, width, font, zoom)
 
 end
 
-
-return ToDoListHelpers
+return ToDoListUtility

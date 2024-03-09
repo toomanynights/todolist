@@ -1,0 +1,18 @@
+UI_EN = {
+	UI_optionscreen_binding_ToDoList = "Daftar Tugas",
+	UI_optionscreen_binding_ToDoListToggle = "Alihkan UI",
+	UI_optionscreen_binding_ToDoListNew = "Barang baru",
+	UI_optionscreen_binding_ToDoListCheckOff = "Hapus Item yang Dicentang",
+	UI_optionscreen_binding_ToDoListDeleteAll = "Hapus SEMUA Item",
+	UI_ToDoList_Title = "Daftar Tugas",
+	UI_ToDoList_Button_AddNew = "Tugas Baru",
+	UI_ToDoList_Button_AddNew_Tooltip = "Tambahkan item baru ke daftar. <br><br>Tombol pintas:",
+	UI_ToDoList_Button_CheckOff = "Centang",
+	UI_ToDoList_Button_CheckOff_Tooltip = "Hapus semua item yang dicentang dari daftar. <br><br>Tombol pintas:",
+	UI_NewToDoListItem_Title = "Tugas Baru",
+	UI_NewToDoListItem_Button_Save = "Menyimpan",
+	UI_ToDoListWarning_Title = "Peringatan!",
+	UI_ToDoListWarning_Text1 = "Apakah Anda yakin ingin menghapus daftar tugas Anda?",
+	UI_ToDoListWarning_Text2 = "Ini tidak dapat dibatalkan.",
+	UI_LeftPanel_ToDoListButton_Tooltip = "Alihkan UI Daftar Tugas.<br><br>Tombol pintas:"
+}

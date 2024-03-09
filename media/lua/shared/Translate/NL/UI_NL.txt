@@ -1,0 +1,18 @@
+UI_NL = {
+	UI_optionscreen_binding_ToDoList = "Te doen lijst",
+	UI_optionscreen_binding_ToDoListToggle = "Schakel gebruikersinterface in",
+	UI_optionscreen_binding_ToDoListNew = "Nieuw item",
+	UI_optionscreen_binding_ToDoListCheckOff = "Verwijder aangevinkte items",
+	UI_optionscreen_binding_ToDoListDeleteAll = "Verwijder ALLE items",
+	UI_ToDoList_Title = "Te doen lijst",
+	UI_ToDoList_Button_AddNew = "Nieuwe taak",
+	UI_ToDoList_Button_AddNew_Tooltip = "Voeg een nieuw item toe aan de lijst. <br><br>Sneltoets:",
+	UI_ToDoList_Button_CheckOff = "Vink uit",
+	UI_ToDoList_Button_CheckOff_Tooltip = "Verwijder alle aangevinkte items uit de lijst. <br><br>Sneltoets:",
+	UI_NewToDoListItem_Title = "Nieuwe taak",
+	UI_NewToDoListItem_Button_Save = "Redden",
+	UI_ToDoListWarning_Title = "Waarschuwing!",
+	UI_ToDoListWarning_Text1 = "Weet u zeker dat u uw takenlijst wilt wissen?",
+	UI_ToDoListWarning_Text2 = "Dit kan niet ongedaan gemaakt worden.",
+	UI_LeftPanel_ToDoListButton_Tooltip = "Schakel de gebruikersinterface van de takenlijst in.<br><br>Sneltoets:"
+}

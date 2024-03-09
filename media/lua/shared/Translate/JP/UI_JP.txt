@@ -1,0 +1,18 @@
+UI_JP = {
+	UI_optionscreen_binding_ToDoList = "やることリスト",
+	UI_optionscreen_binding_ToDoListToggle = "UIの切り替え",
+	UI_optionscreen_binding_ToDoListNew = "新商品",
+	UI_optionscreen_binding_ToDoListCheckOff = "チェックを入れた項目を削除する",
+	UI_optionscreen_binding_ToDoListDeleteAll = "すべてのアイテムを削除",
+	UI_ToDoList_Title = "やることリスト",
+	UI_ToDoList_Button_AddNew = "新しい仕事",
+	UI_ToDoList_Button_AddNew_Tooltip = "新しい項目をリストに追加します。 <br><br>ホットキー:",
+	UI_ToDoList_Button_CheckOff = "チェックオフ",
+	UI_ToDoList_Button_CheckOff_Tooltip = "チェックを入れたすべての項目をリストから削除します。 <br><br>ホットキー:",
+	UI_NewToDoListItem_Title = "新しい仕事",
+	UI_NewToDoListItem_Button_Save = "保存",
+	UI_ToDoListWarning_Title = "警告！",
+	UI_ToDoListWarning_Text1 = "To Do リストをクリアしてもよろしいですか?",
+	UI_ToDoListWarning_Text2 = "これは、元に戻すことはできません。",
+	UI_LeftPanel_ToDoListButton_Tooltip = "To-Do リスト UI を切り替えます。<br><br>ホットキー:"
+}

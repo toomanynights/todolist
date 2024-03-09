@@ -1,0 +1,18 @@
+UI_RU = {
+	UI_optionscreen_binding_ToDoList = "Список дел",
+	UI_optionscreen_binding_ToDoListToggle = "Переключить интерфейс",
+	UI_optionscreen_binding_ToDoListNew = "Добавить дело",
+	UI_optionscreen_binding_ToDoListCheckOff = "Удалить отмеченные",
+	UI_optionscreen_binding_ToDoListDeleteAll = "Очистить список",
+	UI_ToDoList_Title = "Список дел",
+	UI_ToDoList_Button_AddNew = "Добавить дело",
+	UI_ToDoList_Button_AddNew_Tooltip = "Добавьте новый элемент в список. <br><br>Горячая клавиша:",
+	UI_ToDoList_Button_CheckOff = "Удалить отмеченные",
+	UI_ToDoList_Button_CheckOff_Tooltip = "Удалите все отмеченные элементы из списка. <br><br>Горячая клавиша:",
+	UI_NewToDoListItem_Title = "Добавить дело",
+	UI_NewToDoListItem_Button_Save = "Сохранить",
+	UI_ToDoListWarning_Title = "Предупреждение!",
+	UI_ToDoListWarning_Text1 = "Вы уверены, что хотите очистить список дел?",
+	UI_ToDoListWarning_Text2 = "Отмена этого действия невозможна.",
+	UI_LeftPanel_ToDoListButton_Tooltip = "Переключить пользовательский интерфейс списка дел.<br><br>Горячая клавиша:"
+}

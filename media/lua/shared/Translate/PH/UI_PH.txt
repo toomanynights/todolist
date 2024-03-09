@@ -1,0 +1,18 @@
+UI_EN = {
+	UI_optionscreen_binding_ToDoList = "Listahan ng Gagawin",
+	UI_optionscreen_binding_ToDoListToggle = "I-toggle ang UI",
+	UI_optionscreen_binding_ToDoListNew = "Bagong Item",
+	UI_optionscreen_binding_ToDoListCheckOff = "Alisin ang mga Ticked Item",
+	UI_optionscreen_binding_ToDoListDeleteAll = "Alisin ang LAHAT ng Item",
+	UI_ToDoList_Title = "Listahan ng Gagawin",
+	UI_ToDoList_Button_AddNew = "Bagong gawain",
+	UI_ToDoList_Button_AddNew_Tooltip = "Magdagdag ng bagong item sa listahan. <br><br>Hotkey:",
+	UI_ToDoList_Button_CheckOff = "I-check Off",
+	UI_ToDoList_Button_CheckOff_Tooltip = "Alisin ang lahat ng naka-tick na item sa listahan. <br><br>Hotkey:",
+	UI_NewToDoListItem_Title = "Bagong gawain",
+	UI_NewToDoListItem_Button_Save = "I-save",
+	UI_ToDoListWarning_Title = "Babala!",
+	UI_ToDoListWarning_Text1 = "Sigurado ka bang gusto mong i-clear ang iyong listahan ng gagawin?",
+	UI_ToDoListWarning_Text2 = "Hindi na ito maaaring bawiin.",
+	UI_LeftPanel_ToDoListButton_Tooltip = "I-toggle ang To-Do List UI.<br><br>Hotkey:"
+}

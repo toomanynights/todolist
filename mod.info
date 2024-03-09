@@ -1,5 +1,9 @@
-name=TodoList
-poster=poster.png
-id=todolist
-description=You can have a todo list
-url=
+name=To-Do List
+poster=pics/todolist0.png
+poster=pics/todolist1.png
+poster=pics/todolist2.png
+poster=pics/todolist3.png
+poster=pics/todolist4.gif
+id=ToDoList
+description=At last, you can leave your map alone and keep your shopping list where it belongs: in a To-Do List interface. Minimalistic UI mod build with compatibility and convenience in mind.
+require=UIAPI

@@ -1,0 +1,18 @@
+UI_DE = {
+	UI_optionscreen_binding_ToDoList = "Aufgabenliste",
+	UI_optionscreen_binding_ToDoListToggle = "Benutzeroberfläche umschalten",
+	UI_optionscreen_binding_ToDoListNew = "Neuer Gegenstand",
+	UI_optionscreen_binding_ToDoListCheckOff = "Markierte Elemente entfernen",
+	UI_optionscreen_binding_ToDoListDeleteAll = "Entfernen Sie ALLE Elemente",
+	UI_ToDoList_Title = "Aufgabenliste",
+	UI_ToDoList_Button_AddNew = "Neue Aufgabe",
+	UI_ToDoList_Button_AddNew_Tooltip = "Fügen Sie der Liste ein neues Element hinzu. <br><br>Hotkey:",
+	UI_ToDoList_Button_CheckOff = "Abhaken",
+	UI_ToDoList_Button_CheckOff_Tooltip = "Entfernen Sie alle markierten Elemente aus der Liste. <br><br>Hotkey:",
+	UI_NewToDoListItem_Title = "Neue Aufgabe",
+	UI_NewToDoListItem_Button_Save = "Speichern",
+	UI_ToDoListWarning_Title = "Warnung!",
+	UI_ToDoListWarning_Text1 = "Sind Sie sicher, dass Sie Ihre To-Do-Liste löschen möchten?",
+	UI_ToDoListWarning_Text2 = "Das kann nicht rückgängig gemacht werden.",
+	UI_LeftPanel_ToDoListButton_Tooltip = "To-Do-Listen-Benutzeroberfläche umschalten.<br><br>Hotkey:"
+}

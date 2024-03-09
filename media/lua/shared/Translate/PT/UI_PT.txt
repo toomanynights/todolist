@@ -1,0 +1,18 @@
+UI_PT = {
+	UI_optionscreen_binding_ToDoList = "Lista de afazeres",
+	UI_optionscreen_binding_ToDoListToggle = "Alternar interface do usuário",
+	UI_optionscreen_binding_ToDoListNew = "Novo item",
+	UI_optionscreen_binding_ToDoListCheckOff = "Remover itens marcados",
+	UI_optionscreen_binding_ToDoListDeleteAll = "Remover TODOS os itens",
+	UI_ToDoList_Title = "Lista de afazeres",
+	UI_ToDoList_Button_AddNew = "Nova tarefa",
+	UI_ToDoList_Button_AddNew_Tooltip = "Adicione um novo item à lista. <br><br>Tecla de atalho:",
+	UI_ToDoList_Button_CheckOff = "Marcar",
+	UI_ToDoList_Button_CheckOff_Tooltip = "Remova todos os itens marcados da lista. <br><br>Tecla de atalho:",
+	UI_NewToDoListItem_Title = "Nova tarefa",
+	UI_NewToDoListItem_Button_Save = "Salvar",
+	UI_ToDoListWarning_Title = "Aviso!",
+	UI_ToDoListWarning_Text1 = "Tem certeza de que deseja limpar sua lista de tarefas?",
+	UI_ToDoListWarning_Text2 = "Isto não pode ser desfeito.",
+	UI_LeftPanel_ToDoListButton_Tooltip = "Alternar interface da lista de tarefas.<br><br>Tecla de atalho:"
+}

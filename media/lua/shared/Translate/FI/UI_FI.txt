@@ -1,0 +1,18 @@
+UI_FI = {
+	UI_optionscreen_binding_ToDoList = "Tehtävälista",
+	UI_optionscreen_binding_ToDoListToggle = "Vaihda käyttöliittymä",
+	UI_optionscreen_binding_ToDoListNew = "Uusi kohde",
+	UI_optionscreen_binding_ToDoListCheckOff = "Poista rastitut kohteet",
+	UI_optionscreen_binding_ToDoListDeleteAll = "Poista KAIKKI kohteet",
+	UI_ToDoList_Title = "Tehtävälista",
+	UI_ToDoList_Button_AddNew = "Uusi tehtävä",
+	UI_ToDoList_Button_AddNew_Tooltip = "Lisää uusi kohde luetteloon. <br><br>Pikanäppäin:",
+	UI_ToDoList_Button_CheckOff = "Ruksata",
+	UI_ToDoList_Button_CheckOff_Tooltip = "Poista kaikki rastitut kohteet luettelosta. <br><br>Pikanäppäin:",
+	UI_NewToDoListItem_Title = "Uusi tehtävä",
+	UI_NewToDoListItem_Button_Save = "Tallentaa",
+	UI_ToDoListWarning_Title = "Varoitus!",
+	UI_ToDoListWarning_Text1 = "Haluatko varmasti tyhjentää tehtäväluettelosi?",
+	UI_ToDoListWarning_Text2 = "Tätä ei voi peruuttaa.",
+	UI_LeftPanel_ToDoListButton_Tooltip = "Vaihda tehtäväluettelon käyttöliittymä päälle.<br><br>Pikanäppäin:"
+}

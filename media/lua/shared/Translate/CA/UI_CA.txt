@@ -1,0 +1,18 @@
+UI_EN = {
+	UI_optionscreen_binding_ToDoList = "Llista de tasques pendents",
+	UI_optionscreen_binding_ToDoListToggle = "Commuta la interfície d'usuari",
+	UI_optionscreen_binding_ToDoListNew = "Article nou",
+	UI_optionscreen_binding_ToDoListCheckOff = "Elimina els elements marcats",
+	UI_optionscreen_binding_ToDoListDeleteAll = "Elimina TOTS els elements",
+	UI_ToDoList_Title = "Llista de tasques pendents",
+	UI_ToDoList_Button_AddNew = "Nova tasca",
+	UI_ToDoList_Button_AddNew_Tooltip = "Afegiu un element nou a la llista. <br><br>Tecla d'accés ràpid:",
+	UI_ToDoList_Button_CheckOff = "Marqueu Off",
+	UI_ToDoList_Button_CheckOff_Tooltip = "Elimina tots els elements marcats de la llista. <br><br>Tecla d'accés ràpid:",
+	UI_NewToDoListItem_Title = "Nova tasca",
+	UI_NewToDoListItem_Button_Save = "Desa",
+	UI_ToDoListWarning_Title = "Avís!",
+	UI_ToDoListWarning_Text1 = "Esteu segur que voleu esborrar la vostra llista de tasques pendents?",
+	UI_ToDoListWarning_Text2 = "Això no es pot desfer.",
+	UI_LeftPanel_ToDoListButton_Tooltip = "Commuta la interfície d'usuari de la llista de tasques pendents.<br><br>Tecla d'accés ràpid:"
+}
